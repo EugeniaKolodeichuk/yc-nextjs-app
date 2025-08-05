@@ -24,6 +24,10 @@
     @apply flex justify-between items-center;
   }
 
+  .text-primary {
+    color: var(--color-primary);
+  }
+
   .text-30-extrabold {
     font-size: 30px;
     font-weight: 800;
