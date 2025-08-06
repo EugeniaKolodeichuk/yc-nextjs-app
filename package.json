@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^4.3.0",
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
@@ -22,8 +24,12 @@
     "lucide-react": "^0.526.0",
     "next": "15.4.2",
     "next-auth": "^5.0.0-beta.29",
+    "next-sanity": "^10.1.0-canary.10",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "sanity": "^4.3.0",
+    "sanity-plugin-markdown": "^6.0.0",
+    "styled-components": "^6.1.19",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7"
