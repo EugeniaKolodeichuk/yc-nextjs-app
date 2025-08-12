@@ -3,6 +3,25 @@
 
 @custom-variant dark (&:is(.dark *));
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-primary: #EE2B69;
+  --color-primary-100: #FFE8F0;
+
+  --color-black: #000000;
+  --color-black-100: #333333;
+  --color-black-200: #141413;
+  --color-black-300: #7D8087;
+
+  --color-white: #FFFFFF;
+  --color-white-100: #F7F7F7;
+
+  --shadow-100: 2px 2px 0px 0px rgb(0 0 0);
+  --shadow-200: 2px 2px 0px 2px rgb(0 0 0);
+  --shadow-300: 2px 2px 0px 2px rgb(238 43 105);
+}
 
 @layer base {
   :root {
@@ -26,6 +45,10 @@
 
   .text-primary {
     color: var(--color-primary);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
   }
 
   .text-30-extrabold {
@@ -478,20 +501,20 @@
   }
 
   .view-container {
-    @apply flex justify-end items-center fixed;
-    right: 12px;
-    margin-bottom: 12px;
-    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.25rem;
+    position: fixed;
+    bottom: 0.75rem;
+    right: 0.75rem;
   }
 
   .view-text {
     font-weight: 500;
     font-size: 16px;
     background-color: var(--color-primary-100);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     text-transform: capitalize;
   }
