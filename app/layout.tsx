@@ -30,8 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Используем className, а не variable */}
-      <body className={workSans.className}>
+      <body className={workSans.className} suppressHydrationWarning>
         {children}
       </body>
     </html>
