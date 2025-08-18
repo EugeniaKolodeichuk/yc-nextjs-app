@@ -17,7 +17,7 @@ const Navbar = async () => {
                     {session && session?.user ? (
                         <>
                             <Link href="/startup/create">
-                                <span className='font-work-sans'>Create</span>
+                                <span className='font-work-sans cursor-pointer'>Create</span>
                             </Link>
 
                             <form action={async () => {
@@ -25,7 +25,7 @@ const Navbar = async () => {
                                 await signOut({ redirectTo: "/" })
                             }
                             }>
-                                <button type="submit">Logout</button>
+                                <button type="submit" className='cursor-pointer'>Logout</button>
                             </form>
 
                             <Link href={`/user/${session?.id}`}>
@@ -37,7 +37,7 @@ const Navbar = async () => {
                             "use server";
                             await signIn('github')
                         }}>
-                            <button type="submit" >
+                            <button type="submit" className='cursor-pointer' >
                                 Login
                             </button>
                         </form>
